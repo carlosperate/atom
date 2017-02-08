@@ -18,12 +18,12 @@ module.exports = function () {
     'app-bundle-id': 'com.github.atom',
     'app-copyright': `Copyright © 2014-${(new Date()).getFullYear()} GitHub, Inc. All rights reserved.`,
     'app-version': CONFIG.appMetadata.version,
-    'arch': (() => {
-      if (process.platform === 'linux') {
-        return process.arch
-      } else {
-        return process.platform === 'win32' ? 'ia32' : 'x64'
-      }})(),
+    'arch': 'armv7l', //(() => {
+      //if (process.platform === 'linux') {
+      //  return process.arch
+      //} else {
+      //  return process.platform === 'win32' ? 'ia32' : 'x64'
+      //}})(),
     'asar': {unpack: buildAsarUnpackGlobExpression()},
     'build-version': CONFIG.appMetadata.version,
     'download': {cache: CONFIG.electronDownloadPath},
