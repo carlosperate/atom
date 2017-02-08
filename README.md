@@ -1,3 +1,25 @@
+# Atom for Raspberry Pi
+
+Fork from f7d3f0210bf6ff1b4193d8a8b8a54c199b561bc2 as indicated by [atom-in-orbit/config.json](https://github.com/facebooknuclide/atom-in-orbit/blob/302363fc34936511526a0cb11f20628215317d7b/config.json) to be able to use use atom in the browser.
+
+```
+git clone https://github.com/carlosperate/atom.git
+cd atom
+git checkout -b in-orbit origin/in-orbit
+script/build --install
+(maybe?) apm install
+```
+
+```
+git clone https://github.com/facebooknuclide/atom-in-orbit.git
+cd atom-in-orbit
+echo '{ "ATOM_SRC": "<path_to_atom_source_directory>" }' > config.local.json
+npm install
+npm run build
+```
+
+-----
+
 ![Atom](https://cloud.githubusercontent.com/assets/72919/2874231/3af1db48-d3dd-11e3-98dc-6066f8bc766f.png)
 
 [![macOS Build Status](https://circleci.com/gh/atom/atom.svg?style=svg)](https://circleci.com/gh/atom/atom) [![Linux Build Status](https://travis-ci.org/atom/atom.svg?branch=master)](https://travis-ci.org/atom/atom) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/1tkktwh654w07eim?svg=true)](https://ci.appveyor.com/project/Atom/atom)
